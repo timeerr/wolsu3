@@ -8,7 +8,7 @@ def ejecutarbacktest(listaDeVelas):
    
     from clasesBacktest import añadirATRListaDeVelas
     import os
-    os.chdir('C:\\Users\\timee\\Google Drive\\Development\\Trading')
+    os.chdir('')
     import zigZag
         
     
