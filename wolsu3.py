@@ -57,26 +57,7 @@ def ejecutarbacktest(listaDeVelas):
             listaSetups[-1].cierreForzoso(listaDeVelas[-1])
         else:
             listaSetups.pop()
-
-    
-    
-    # suma=0
-    # num=1
-    # for i in listaSetups:
-    #     print("Fecha ", i.listaDeVelas[0].fecha)
-    #     if not i.orden == "na":
-    #         import matplotlib.pyplot as plt
-    #         plt.figure(num)
-    #         i.plotSetup()
-    #         num+=1
-    #         res = i.resultadoSetup()
-    #         suma+=res
-    #     print ()
-    # print(len(listaSetups))
-    # print()
-    # print("Resultado final R ", suma)
-
- 
+            
     return (listaSetups)
 
 
@@ -112,10 +93,9 @@ def nuevosetupWolsu3 (listaDeVelas, porcentajecambio , profundidad):
     pun1 = zigZag[ind1]
     
     #creamos los prámetros del setup supuesto:
-    
-    
     setupprov = setupclase(False,ind1,ind2,ind3,ind4,indAct,pun1,pun2,pun3,pun4,velaAct.cierre,listaDeVelas\
                            ,porcentajecambio,profundidad)
+    
     #calculamos el punto en el que se encuentra la linea 1-3 actualmente:
     linea13 = setupprov.calcularlinea13()
     
